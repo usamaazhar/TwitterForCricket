@@ -1,0 +1,4 @@
+#jsmap files
+*.js.map
+#js Files
+*.js
