@@ -1,0 +1,62 @@
+
+ul {
+  list-style-type: none;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.imagesCls
+{
+    height: 75px;
+    width: 75px;
+}
+.tweetText
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5%;
+}
+.tweetBox
+{
+width: 50%
+}
+
+.Header
+{
+padding-bottom: 2%;
+padding-left: 5%;
+background-color: darkslateblue;
+color: ghostwhite;
+margin-top: 0px; 
+margin-bottom: 0px; 
+
+}
+.lowerLine
+{
+    color:black;
+    padding-left: 5%;
+}
+.retweetImage{
+    width: 30px;
+    height: 30px;
+}
+.imageGif
+{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+ html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    display: table;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+.gifLoader
+{
+    margin-top: 45%;
+}

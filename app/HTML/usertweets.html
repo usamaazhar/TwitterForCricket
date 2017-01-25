@@ -1,0 +1,37 @@
+
+    <div *ngIf="isErr" class="center-block  well tweetBox">
+    <h4>Unable to get response from API</h4>
+    <p>{{errorMessage}}
+    </div>
+    <div class="container container-table" *ngIf="!tweetList && !isErr">
+    <div class="row vertical-center-row">
+        <div class="text-center col-md-4 col-md-offset-4"><img class="gifLoader" src="app/resources/gif/loading43.gif"/></div>
+    </div>
+</div>
+    <!--<div *ngIf="!tweetList && !isErr" class="imageGif"><img src="app/resources/gif/please-wait-animation.gif"/></div>-->
+<div class="center-block tweetBox well" *ngIf="tweetList">
+
+
+<ul>
+<li *ngFor="let tweet of tweetList">
+<div class="row well">
+    
+    <div class="col-md-1 nopadding">  <img [src] = "tweet.ProfileImageURL" class="imagesCls" alt="DisplayPic"/></div>
+    <div class="col-md-11">
+        <div class="col-md-3 nopadding"><h4>{{tweet.UserName}}</h4>
+        <h5>@{{tweet.ScreenName}}</h5></div>
+         <br/>      
+        <div class="col-md-7 nopadding">
+         <p class="tweetText">
+             {{tweet.TweetText}}
+         </p>
+         <div class="lowerLine">
+         <p *ngIf="tweet.RetweetCount!=0">
+           <img class="retweetImage" src="app/resources/icons/rt1.png" /> <span>{{tweet.RetweetCount}}</span> 
+         </p>
+         </div>
+         </div>
+    </div>
+</div>
+</ul>
+</div>
